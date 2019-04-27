@@ -1,0 +1,176 @@
+// vars
+$color-base-dark: #282E37;
+$color-base-soft: #323A45;
+$color-base-light: #EFF3F5;
+$color-base-neutral: #E8EFF1;
+$color-main-text: #475364;
+$color-fade: #8EA4B5;
+$color-default: #FFFFFF;
+$color-warn: #FF5943;
+$color-good: #B2D170;
+$color-neutral: #8EA4B5;
+$font-main: bold 12px/14px Roboto; 
+$font-regular: normal 12px/14px Roboto;
+$font-tiny: normal 10px/12px Roboto;
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+html{
+	font: $font-main;
+	color: $color-main-text;
+}
+// WRAPPER
+.wrapper{
+   width: 1440px;
+   // height: 1024px;
+   height: 100vh;
+   display: grid;
+   grid-template-areas: 
+      "header header"
+      "aside box";
+   grid-template-columns: 80px 1fr;
+   grid-template-rows: 66px 1fr;
+}
+// header
+.header{
+   background-color: $color-base-dark;
+   grid-area: header;
+   display: flex;
+   align-items: center;
+   padding-left: 27px;
+   .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__word{
+         margin-left: 10px;
+      }
+   }
+}
+
+.sidebar{
+   background-color: $color-base-soft;
+   grid-area: aside;
+   display: flex;
+   flex-direction: column;
+   padding-top: 20px;
+   align-items: center;
+}
+.clients{
+   background-color: $color-base-dark;
+   width: 50px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 4px;
+   &__icon{
+      fill: $color-default;
+      stroke: $color-default;
+   }
+}
+.box{
+   background-color: $color-base-light;
+   grid-area: box;
+   padding: 20px 30px;
+
+   &__header{
+      margin-bottom: 24px;
+      h2{
+         font-size: 22px;
+         line-height: 22px;
+         margin-bottom: 6px;
+      }
+      p{
+         font: $font-regular;
+         font-size: 12px;
+         line-height: 14px;
+      }
+   }
+}
+.table{
+   background-color: $color-default;
+   width: 100%;
+   border-collapse: collapse;
+   height: 74px;
+}
+.table__row{
+   // height: 74px;
+   &:not(:last-child){
+      border-bottom: 2px solid $color-base-light;
+   }
+   
+}
+.table__header{
+   height: 40px;
+}
+.table__head, .table__cell{
+   text-align: left;
+   padding-left: 20px;
+   // outline: 2px solid gold;
+}
+.table__cell{
+   height: 74px;  
+}
+.table__head{
+   padding-left: 20px;
+   height: 40px;
+}
+.table__wrapper{
+   display: flex;
+   height: 100%;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+}
+.client{
+
+}
+.client__wrapper{
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+}
+.client__icon{
+   width: 36px;
+   height: 36px;
+   border-radius: 3px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   fill: $color-default;
+   stroke: $color-default;
+   margin-right: 10px;
+   &--neutral{
+      background-color:  $color-base-neutral;
+      fill: $color-neutral;
+      stroke: $color-neutral;
+   }
+   &--warn{
+      background-color: $color-warn;
+   }
+   &--good{
+      background-color: $color-good;
+   }
+}
+.client__code{
+   font: $font-tiny;
+   color: $color-fade;
+}
+// Not-contract block
+.not-contract{
+
+   &__bar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $color-warn;
+   }
+}
+
+.vis-hidden{
+   visibility: hidden;
+}

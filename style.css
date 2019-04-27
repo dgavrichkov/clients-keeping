@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font: bold 12px/14px Roboto;
+  color: #475364;
+}
+
+.wrapper {
+  width: 1440px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header" "aside box";
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  -ms-grid-rows: 66px 1fr;
+      grid-template-rows: 66px 1fr;
+}
+
+.header {
+  background-color: #282E37;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 27px;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .logo__word {
+  margin-left: 10px;
+}
+
+.sidebar {
+  background-color: #323A45;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients {
+  background-color: #282E37;
+  width: 50px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+
+.clients__icon {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+
+.box {
+  background-color: #EFF3F5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box;
+  padding: 20px 30px;
+}
+
+.box__header {
+  margin-bottom: 24px;
+}
+
+.box__header h2 {
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+
+.box__header p {
+  font: normal 12px/14px Roboto;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.table {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-collapse: collapse;
+  height: 74px;
+}
+
+.table__row:not(:last-child) {
+  border-bottom: 2px solid #EFF3F5;
+}
+
+.table__header {
+  height: 40px;
+}
+
+.table__head, .table__cell {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.table__cell {
+  height: 74px;
+}
+
+.table__head {
+  padding-left: 20px;
+  height: 40px;
+}
+
+.table__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client__wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.client__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  margin-right: 10px;
+}
+
+.client__icon--neutral {
+  background-color: #E8EFF1;
+  fill: #8EA4B5;
+  stroke: #8EA4B5;
+}
+
+.client__icon--warn {
+  background-color: #FF5943;
+}
+
+.client__icon--good {
+  background-color: #B2D170;
+}
+
+.client__code {
+  font: normal 10px/12px Roboto;
+  color: #8EA4B5;
+}
+
+.not-contract__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FF5943;
+}
+
+.vis-hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */
