@@ -160,7 +160,7 @@
                   </td>
                </tr>
                <!-- /////////////////////////////////////////////////// -->
-               <tr class="table__row">
+               <tr class="table__row" id="begemot">
                   <td class="table__cell client">
                      <div class="table__wrapper client__wrapper">
                         <figure class="client__icon icon icon--warn">
@@ -215,16 +215,20 @@
                      </div>
                   </td>
                   <td class="table__cell values">
-                     <div class="values__price">238 985.15 ₽</div>
-                     <div class="values__val">236.52 м³</div>
+                     <div class="table__wrapper">
+                        <div class="values__price">238 985.15 ₽</div>
+                        <div class="values__val">236.52 м³</div>
+                     </div>
                   </td>
                   <td class="table__cell zones">
-                     <p class="zones__num">2 геозоны</p>
-                     <p class="zones__containers">3 контейнера - 10.2 м³</p>
+                     <div class="table__wrapper">
+                        <p class="zones__num">2 геозоны</p>
+                        <p class="zones__containers">3 контейнера - 10.2 м³</p>
+                     </div>
                   </td>
                   <td class="table__cell drop-trg">
                      <div class="table__wrapper">
-                        <a href="#" class="drop-trg__btn">
+                        <a href="#" class="drop-trg__btn" onclick="dropList()">
                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8"
                               height="5">
                               <defs>
@@ -477,7 +481,6 @@
                                  <path stroke="none"
                                     d="M7.88023 1.20412C8.03992 1.06626 8.03992 0.490679 7.88023 0.352879L7.591 0.103333C7.43121 -0.0344443 7.17215 -0.0344443 7.01256 0.103333L3.99996 3.40306L0.987784 0.103333C0.827913 -0.0344443 0.568669 -0.0344443 0.409136 0.103333L0.119904 0.352879C-0.0399679 0.490679 -0.0399679 1.06626 0.119904 1.20412L3.67722 4.89657C3.83686 5.03448 4.38472 5.03448 4.54441 4.89657L7.88023 1.20412" />
                               </g>
-
                            </svg>
                         </a>
                      </div>
@@ -487,6 +490,8 @@
          </section>
       </main>
    </div>
+
+   <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -302,7 +302,6 @@ html {
             fill: $color-warn;
             stroke: $color-warn;
          }
-
       }
    }
 }
@@ -392,4 +391,10 @@ html {
 
 .vis-hidden {
    visibility: hidden;
+}
+
+
+.open{
+   height: 300px;
+   vertical-align: top;
 }

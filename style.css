@@ -442,4 +442,9 @@ html {
 .vis-hidden {
   visibility: hidden;
 }
+
+.open {
+  height: 300px;
+  vertical-align: top;
+}
 /*# sourceMappingURL=style.css.map */
