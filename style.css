@@ -313,6 +313,32 @@ html {
   background-size: contain;
 }
 
+.drop-trg {
+  padding: 0 20px;
+}
+
+.drop-trg__btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #E8EFF1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.drop-trg__btn:hover svg {
+  fill: #FF5943;
+  stroke: #FF5943;
+}
+
 .icon {
   width: 36px;
   height: 36px;
